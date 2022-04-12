@@ -30,3 +30,64 @@ public class Assignment1 {
 	}
 
 }
+_________________________________________________________________________________________________________________________________________________________________________
+
+package new_package;
+
+import java.util.Scanner;
+
+public class Assignmet1question2 {
+	static float purchase,rate;
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the purchase :");
+		purchase=sc.nextFloat();
+		System.out.println("Enter the rate :");
+		rate=sc.nextFloat();
+		
+		
+		if(purchase>1000) {
+			double discount = (purchase*0.9);
+			double TotalExpense = (discount*rate);
+			System.out.println("Total expense : "+TotalExpense);
+			
+		}
+		else {
+			double TotalExpense = (rate*purchase);
+			System.out.println("Total expense : "+TotalExpense);
+			
+		}
+		
+		
+
+	}
+
+}
+_____________________________________________________________________________________________________________________________________________________________________
+
+package new_package;
+
+import java.util.Scanner;
+
+public class Assignment1question3 {
+	
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the currentNumber :");
+		int currentNumber = sc.nextInt();
+		
+		if((currentNumber%2) != 0) {
+			currentNumber= (currentNumber*3)+1;
+			System.out.println("currentNumber is :"+currentNumber);
+			
+		}
+		else {
+			currentNumber= currentNumber/2;
+			System.out.println("currentNumber is :"+currentNumber);
+		}
+
+	}
+
+}
