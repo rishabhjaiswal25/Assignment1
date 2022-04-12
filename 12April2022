@@ -91,3 +91,34 @@ public class Assignment1question3 {
 	}
 
 }
+
+_____________________________________________________________________________________________________________________________________________________________________
+
+package new_package;
+
+import java.util.Scanner;
+
+public class Assignment1question5 {
+	
+	static int cost;
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the cost :");
+		int cost = sc.nextInt();
+		
+		if(cost<=15000) {
+			System.out.println("Mobile choosen is within the budget");
+			
+		}
+		else {
+			System.out.println("Mobile choosen is beyond the budget");
+		}
+
+		
+
+	}
+
+}
+
+
