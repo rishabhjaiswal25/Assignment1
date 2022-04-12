@@ -1,0 +1,32 @@
+package new_package;
+
+import java.util.Scanner;
+
+public class Assignment1 {
+    static float code,x,y;
+    
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the code :");
+		code=sc.nextFloat();
+		System.out.println("Enter the x :");
+		x=sc.nextFloat();
+		System.out.println("Enter the y :");
+		y=sc.nextFloat();
+		arithmetic(code, x, y);
+		
+
+	}
+
+	private static void arithmetic(float code, float x, float y) {
+		if(code==1) {
+			float sum = x+y;
+			System.out.println("Sum of X and Y : "+sum);
+			
+			
+		}
+		else
+			System.out.println("sum is : 0.00");
+	}
+
+}
