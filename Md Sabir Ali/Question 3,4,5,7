@@ -1,0 +1,118 @@
+QUESTION 3:
+
+package assignment_1;
+import java.util.Scanner;
+public class Assignment {
+
+		    public static void main (String[] args) 
+		    {
+		    	    int currentNumber;
+		    	    Scanner ob=new Scanner(System.in);
+		    	    System.out.println("currentNumber:");
+		    	    currentNumber=ob.nextInt();
+
+		    	if (currentNumber % 2 == 1)
+
+		    	     currentNumber = currentNumber*3+1;
+
+		    	else
+
+		    	    currentNumber = currentNumber/2;
+
+		    	    System.out.println("currentNumber: " +currentNumber );
+		    	}
+		    	}
+          
+          
+ QUESTION 4:
+ 
+ 
+ package assignment_1;
+import java.util.Scanner;
+public class Assignment 
+{
+		    	      public int teenSum(int num1, int num2) {
+		    	  int sum = num1+num2;
+		    	  if ((num1 >= 13 && num1 <= 19) || (num2 >= 13 && num2 <= 19))
+		    	    return 19;
+		    	  else
+		    	    return sum;
+		    	  }
+
+		    	  public static void main(String[] args) {
+		    	    
+		    	    int a,b;
+		    	    Scanner ob=new Scanner(System.in);
+		    	    System.out.println("a:");
+		    	    a=ob.nextInt();
+		    	    System.out.println("b:");
+		    	    b=ob.nextInt();
+
+		    	   
+		    	    Assignment obj = new Assignment();
+
+		    	    int result = obj.teenSum(a,b);
+		    	    System.out.println("teenSum: " + result);
+		    	  }
+		    	}
+  
+  
+  
+    QUESTION 5:
+    
+    
+    package assignment_1;
+import java.util.Scanner;
+public class Assignment 
+{
+	public static void main(String args[]){
+	   Scanner OB = new Scanner(System.in);
+	   int cost;
+	   System.out.print("Enter the Mobile Cost : ");
+	   cost = OB.nextInt();
+	   if(cost <= 13000)
+	     {
+	       System.out.print("Mobile chosen is within the budget");
+	      }
+	    else
+	      {
+	        System.out.print("Mobile chosen is beyond the budget");
+
+	       }
+
+	   }
+
+	}
+ 
+ 
+ QUESTION 7:
+ 
+ package assignment_1;
+import java.util.Scanner;
+public class Assignment 
+{
+	public static void main(String args[]){
+			    
+			    Scanner ob =new Scanner(System.in);
+			    System.out.println("Enter the color:");
+			    String color=ob.next();
+			    ob.nextLine();
+			
+			    switch(color) {
+			        case "green" :
+			        System.out.println("Go");
+			        break;
+			                 
+			   case "red" :
+			        System.out.println("Stop");
+			         break;       
+			    case "yellow" :
+			        System.out.println("proceed with caution");
+			        break;
+			               
+			    default:
+			    System.out.println("ready to go");
+			    break;
+			    }
+			}
+		}
