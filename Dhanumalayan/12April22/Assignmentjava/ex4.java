@@ -8,10 +8,10 @@ public class Main
 		System.out.print("b : ");
 		int b=s.nextInt();
 		if((a>=13 && a<=19)||(b>=13 && b<=19)){
-		    System.out.println("teen sum : 19");
+		    System.out.println("t sum : 19");
 		}
 		else{
-		    System.out.println("teen sum : "+(a+b));
+		    System.out.println("t sum : "+(a+b));
 		}
 	}
 }
