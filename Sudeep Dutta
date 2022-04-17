@@ -1,0 +1,14 @@
+import java.util.*;
+public class Discount{
+  public static void main(String args[]){
+    int Num;
+    Scanner sc=new Scanner(System.in);
+    Num=sc.nextInt();
+    if(Num%2==1)
+     Num=Num*3+1;
+    else
+     Num=Num/2;
+    System.out.println("Current Number : "+Num);
+}
+}
+
