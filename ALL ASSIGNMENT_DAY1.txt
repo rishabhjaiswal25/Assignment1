@@ -1,0 +1,259 @@
+Q1. 
+
+package new_package;
+import java.util.*;
+
+public class assign1prog1 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Code   ");
+		int code=sc.nextInt();
+		if(code==1) {
+			System.out.print("X   ");
+			double a=sc.nextDouble();
+			System.out.print("Y   ");
+			double b=sc.nextDouble();
+			double sum=a+b;
+			System.out.println("Sum "+sum);
+		}
+		else {
+			System.out.println("Sum "+0.00);
+		}	
+		
+	}
+
+}
+
+
+
+Q2.
+package new_package;
+import java.util.*;
+public class assign1prog2 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Quantity Purchased  ");
+		int Quantity=sc.nextInt();
+		System.out.print("Rate per item  ");
+		double rpm=sc.nextDouble();
+		if(Quantity>1000) {
+			double cost=Quantity*rpm*0.9;
+			System.out.println("Total Expenses  "+cost);
+		}
+		else {
+			double cost=Quantity*rpm;
+			System.out.println("Total Expenses  "+cost);
+		}
+	}
+
+}
+
+
+
+
+Q3.
+package new_package;
+import java.util.*;
+public class assign1prog3 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("currentNumber  ");
+		int currentNumber=sc.nextInt();
+		if (currentNumber%2!=0) {
+			System.out.println("currentNumber: "+(3*currentNumber+1));
+		}
+		else {
+			System.out.println("currentNumber: "+currentNumber/2);
+		}
+	}
+
+}
+
+
+
+
+
+Q4.
+package new_package;
+import java.util.*;
+public class assign1prog4 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("a : ");
+		int a=sc.nextInt();
+		System.out.print("b : ");
+		int b=sc.nextInt();
+		if ((a>=13 && a<=19) || (b>=13 && b<=19)) {
+			System.out.println("teenSum  "+19);
+		}
+		else {
+			System.out.println("teenSum  "+(a+b));
+		}
+	}
+
+}
+
+
+
+
+
+
+Q5
+package new_package;
+import java.util.*;
+public class assign1prog5 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the cost of the mobile ");
+		double a=sc.nextDouble();
+		if(a<=15000) {
+			System.out.println("Mobile chosen is within the budget");
+		}
+		else {
+			System.out.print("Mobile chosen is beyond the budget");
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+Q6.
+package new_package;
+import java.util.*;
+public class assign1prog6 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the car no:");
+		int a=sc.nextInt();
+		if(a>999 && a<10000) {
+			int n=a,sum=0;
+			while(n>0) {
+				sum+=n%10;
+				n=n/10;
+			}
+			if((sum%3==0) || (sum%5==0) || (sum%7==0)){
+				System.out.println("Lucky Number");
+			}
+			else {
+				System.out.println("Sorry it is not my lucky number");
+			}
+		}
+		else {
+			System.out.println(a+" is not a valid number");	
+		}
+		
+	}
+
+}
+
+
+
+
+
+
+Q7.
+package new_package;
+import java.util.*;
+public class assign1prog7 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the color");
+		String s=sc.next();
+		if (s.equals("green")==true) {
+			System.out.println("Go");
+		}
+		else if(s.equals("red")==true) {
+			System.out.println("Stop");
+		}
+		else if(s.equals("yellow")==true) {
+			System.out.println("proceed with caution");
+		}
+		else {
+			System.out.println("prepare to go");
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+Q8.
+package new_package;
+import java.util.*;
+public class assign1prog8 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the month : ");
+		int month=sc.nextInt();
+		if(month>=3 && month<=5) {
+			System.out.print("Season : Spring");
+		}
+		else if(month>=6 && month<=8) {
+			System.out.print("Season : Summer");
+		}
+		else if(month>=9 && month<=11) {
+			System.out.print("Season : Autumn");
+		}
+		else if(month==12 || month<=2) {
+			System.out.print("Season : Winter");
+		}
+		else {
+			System.out.print("Invalid month");
+		}
+			
+
+	}
+
+}
+
+
+
+
+
+
+
+Q9.
+package new_package;
+import java.util.*;
+public class assign1prog9 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		if(a==9 ||a==10) {
+			System.out.print("Excellent");
+		}
+		else if(a==7 ||a==8) {
+			System.out.print("Notable");
+		}
+		else if(a==6) {
+			System.out.print("Good");
+		}
+		else if(a==5) {
+			System.out.print("Approved");
+		}
+		else if(a>=0 && a<=4) {
+			System.out.print("Fail");
+		}
+		else {
+			System.out.print("Invalid");
+		}	
+
+	}
+
+}
