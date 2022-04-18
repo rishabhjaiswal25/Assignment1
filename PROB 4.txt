@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Main {
+      public int teenSum(int n1, int n2) {
+  int sum = n1+n2;
+  if ((n1 >= 13 && n1 <= 19) || (n2 >= 13 && n2 <= 19))
+    return 19;
+  else
+    return sum;
+  }
+
+  public static void main(String[] args) {
+    
+    int a,b;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("a:");
+    a=sc.nextInt();
+    System.out.println("b:");
+    b=sc.nextInt();
+
+   
+    Main obj = new Main();
+
+    int result = obj.teenSum(a,b);
+    System.out.println("teenSum: " + result);
+  }
+}
